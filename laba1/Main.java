@@ -25,15 +25,21 @@ public class Main {
         people.getPersons().add(new Person(52, 170, "Ekaterina"));
         people.getPersons().add(new Person(26, 164, "Alexandra"));
 
-        System.out.printf("\nSort by height\n\n");
+        System.out.println("Input data");
+        printPeople(people);
+        System.out.println();
+
+        System.out.println("Sort by height");
         people.sortByHeight();
         printPeople(people);
+        System.out.println();
 
-        System.out.printf("\nSort by name\n\n");
+        System.out.println("Sort by name");
         people.sortByName();
         printPeople(people);
+        System.out.println();
 
-        System.out.printf("\nSort by age\n\n");
+        System.out.println("Sort by age");
         people.sortByAge();
         printPeople(people);
 
